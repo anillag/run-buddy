@@ -19,19 +19,19 @@ header {
     flex-wrap: wrap;
   }
 
-  header h1 {
+header h1 {
     font-weight: bold;
     font-size: 36px;
     color: #FCE138;
     margin: 0;
   }
   
-  header a {
+header a {
     text-decoration: none;
     color: #FCE138;
   }
 
-  header nav {
+header nav {
     margin: 7px 0;
   }
 
@@ -49,64 +49,79 @@ header {
     font-size: 1.55vw;
   }
 
-  footer {
+footer {
     background: #FCE138;
     width: 100%;
     padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
-  footer h2 {
-    display: inline;
+footer h2 {
     color: #024E76;
     font-size: 30px;
     margin: 0;
   }
 
-  footer div {
-    float: right;
+footer div {
     line-height: 1.5;
     text-align: right;
   }
 
-  footer a {
+footer a {
     color: #024E76;
   }
 
-  section {
+section {
     padding: 60px;
   }
 
-  /* "Jumbotron" Style Start */
-  .hero {
+/* "Jumbotron" Style Start */
+.hero {
     background-image: url("../images/hero-bg.jpg");
-    height: 600px;
     background-size: cover;
     background-position: center;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
-  /* "Jumbotron" Style End */
+/* "Jumbotron" Style End */
 
-  .hero-form {
+.hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
+}
+
+.hero-form {
     background-color: #FCE138;
     padding: 20px;
-    width: 500px;
     color: #024E76;
     border: 3px solid #024E76;
-    position: absolute;
-    bottom: 120px;
-    right: 140px;
+    width: 40%;
+    margin: 3.5%;
   }
 
-  h3 {
+h3 {
       font-size: 24px;
       margin: 0;
   }
 
-  .hero-form p {
+.hero-form p {
     margin: 5px 0 15px 0;
   }
 
-  .form-input {
+.form-input {
       border: solid 1px #024E76;
       display: block;
       padding: 7px 14px;
@@ -116,11 +131,11 @@ header {
       margin-bottom: 15px;
   }
 
-  .hero-form label {
+.hero-form label {
     margin: 0 5px;
   }
 
-  .hero-form button {
+.hero-form button {
       color: #FCE138;
       background-color: #024E76;
       border: none;
@@ -128,11 +143,11 @@ header {
       font-size: 16px;
   }
 
-  .intro {
+.intro {
     text-align: center;
   }
 
-  .intro p {
+.intro p {
       line-height: 1.7;
       color: #39A6B2;
       width: 80%;
@@ -140,12 +155,12 @@ header {
       margin: 0 auto;
   }
 
-  .steps {
+.steps {
       text-align: center;
       background: #FCE138;
   }
 
-  .section-title {
+.section-title {
       font-size: 55px;
       color: #024E76;
       margin-bottom: 35px;
@@ -154,43 +169,43 @@ header {
       border-bottom: 3px solid;
   }
 
-  .primary-border {
+.primary-border {
       border-color: #FCE138;
   }
 
-  .secondary-border {
+.secondary-border {
       border-color: #39A6B2;
   }
 
-  .steps div {
+.steps div {
       margin-bottom: 80px;
   }
 
-  .steps img {
+.steps img {
       width: 15%;
       margin: 10px 0;
   }
 
-  .steps h3 {
+.steps h3 {
       color: #024E76;
       font-size: 46px;
       margin-top: 10px;
   }
 
-  .steps p {
+.steps p {
       color: #39A6B2;
       font-size: 23px;
   }
 
-  .steps span {
+.steps span {
       font-size: 38px;
   }
 
-  .trainers {
+.trainers {
       text-align: center;
   }
 
-  .trainer {
+.trainer {
       width: 900px;
       margin: 0 auto 30px auto;
       background: #024E76;
@@ -198,56 +213,56 @@ header {
       overflow: auto;
   }
 
-  .trainer img {
+.trainer img {
     width: 35%;
     float: left;
   }
   
-  .trainer-bio {
+.trainer-bio {
     padding: 35px;
     float: left;
     width: 65%;
   }
 
-  .text-left {
+.text-left {
       text-align: left;
   }
 
-  .text-right {
+.text-right {
       text-align: right;
   }
 
-  .trainer-bio h3 {
+.trainer-bio h3 {
     font-size: 32px;
     margin-bottom: 8px;
   }
   
-  .trainer-bio h4 {
+.trainer-bio h4 {
     font-weight: lighter;
     font-size: 26px;
     margin-bottom: 25px;
   }
   
-  .trainer-bio p {
+.trainer-bio p {
     font-size: 17px;
     line-height: 1.3;
   }
 
-  .contact {
+.contact {
     text-align: center;
     background: #024E76;
   }
 
-  .contact h2 {
+.contact h2 {
     color: #FCE138;
   }
 
-  .contact-info iframe {
+.contact-info iframe {
     width: 400px;
     height: 400px;
   }
 
-  .contact-info div {
+.contact-info div {
       width: 410px;
       display: inline-block;
       vertical-align: top;
@@ -256,18 +271,18 @@ header {
       color: white;
   }
 
-  .contact-info h3 {
+.contact-info h3 {
     color: #FCE138;
     font-size: 32px;
   }
   
-  .contact-info p, .contact-info address {
+.contact-info p, .contact-info address {
     margin: 20px 0;
     line-height: 1.5;
     font-size: 20px;
     font-style: normal;
   }
   
-  .contact-info a {
+.contact-info a {
     color: #FCE138;
   }
